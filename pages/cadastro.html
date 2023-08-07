@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Evento anual de marketing</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Marketing Digital</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Cadastro</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Lista de Usuários</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+    <main class="container bg-secondary-subtle">
+        <h1 class="text-center my-5">Formulário de Cadastro</h1>
+        <form action="#">
+            <!-- CAMPO DE TEXTO: NOME -->
+            <section class="row mb-2">
+                <div class="col-md-12">
+                    <!-- for="nome" faz ligação com a caixa de imput -->
+                    <label for="nome" class="mb-2">Nome</label>
+                    <input type="text" name="nome" id="nome" class="form-control">
+                </div>
+            </section>
+
+            <!-- CAMPO NÚMERO E TEXTO: IDADE E ENDEREÇO -->
+            <section class="row mb-2">
+                <div class="col-md-6">
+                    <label for="idade">Idade</label>
+                    <input type="number" name="idade" id="idade" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" class="form-control">
+
+                </div>
+            </section>
+
+            <!-- CAMPO DE EMAIL -->
+            <section class="row mb-2">
+                <div class="col-md-12">
+                    <label for="email" class="mb-2">E-mail</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="email@email.com">
+                </div>
+            </section>
+
+            <!-- CAMPO TEXTO: CONFIRMAÇÃO DE EMAIL -->
+            <section>
+                <div class="col-md-12">
+                    <label for="confirmar" class="mb-2">Confirmação de E-mail</label>
+                    <input type="text" name="confirmar" id="confirmar" class="form-control" disabled>
+                </div>
+            </section>
+
+            <!-- CAMPO PASSWORD: SENHA -->
+            <!-- input-group agrupar  -->
+            <!-- col-form-label  informa que não será botão-->
+            <!-- input-group-text informa que será em formato text -->
+            <section class="row mb-2">
+                <div class="col-md-12 input-group">
+                    <label for="password" class="input-group-text col-form-label">Password</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                    <i class="fa-solid fa-eye btn fs-5"></i>
+                </div>
+            </section>
+
+            <!-- CAMPO RADIO -->
+            <section class="row mb-2 ps-3">
+                <label class="col-form-label-lg">Qual o seu nível de escolaridade?</label>
+
+                <div class="form-check">
+                    <input type="radio" name="escolaridade" id="fundamental" value="fundamental" class="form-check-input">
+                    <label for="fundamental" class="form-check-label">Fundamental</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="escolaridade" id="medio" value="medio" class="form-check-input">
+                    <label for="medio" class="form-check-label">Médio</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="escolaridade" id="superior" value="superior" class="form-check-input">
+                    <label for="superior" class="form-check-label">Superior</label>
+                </div>
+
+            </section>
+
+                <div class="col-md-6 mx-auto mb-2">
+                <button class="btn btn-primary col-12">Verificar Escolaridade</button>
+                </div>
+  
+              <!-- CAMPO SWITCH: TERMOS DE CONTRATO -->
+              <div class="alert alert-warning mt-2">
+                <p class="m-0 py-2">Você aceita os termos do contrato?</p>
+              </div>
+  
+              <section class="form-check form-switch">
+                <input type="checkbox" name="escolha" id="escolha" value="escolha" class="form-check-input">
+                <label for="escolha" class="form-check-label">Exibir termos de contrato</label>
+              </section>
+  
+              <!-- INFO DE CONTRATO -->
+              <section class="p-5 mt-3" id="contrato">
+                <div class="container-fluid">
+                  <h1>Termos do Contrato</h1>
+                  <p class="lead altura">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, tenetur quos. At quaerat nesciunt ipsam commodi, modi itaque maiores quia ad nisi, iusto sed cupiditate doloribus, illo molestiae quo neque!
+                    Nulla alias itaque qui quia nesciunt eligendi soluta esse error impedit, magnam blanditiis, quibusdam possimus nobis expedita minus vitae officiis quod voluptatum quas at a. Eligendi dolore deleniti earum a.
+                    Et quisquam libero perspiciatis vel esse eligendi voluptate animi, placeat atque, iste modi dicta. Nihil rem aliquam, ducimus quasi architecto adipisci quis voluptas. Obcaecati consectetur sit reiciendis aspernatur corporis non!
+                    Harum dolorem, est perspiciatis mollitia qui, corrupti quo alias, suscipit dolores facilis assumenda numquam magnam possimus earum quas doloremque temporibus dolor provident! Quis soluta fuga distinctio, culpa obcaecati consectetur iste?
+                    Beatae aliquam vel incidunt corrupti et itaque enim neque ipsum. Accusantium dolor nam distinctio, molestiae molestias consequatur quas necessitatibus debitis aut voluptas, suscipit exercitationem ex vitae hic est qui doloribus?
+                    Aspernatur adipisci harum, ratione cumque atque ut nam voluptatum quam dicta. Exercitationem sed ea, labore obcaecati ut molestiae eius nam vero maiores vel sunt consectetur, repellendus commodi nobis hic ex.
+                    Dignissimos, ipsum. Cupiditate corporis architecto, sed molestias perspiciatis ipsam dignissimos nemo? Suscipit expedita, vitae aliquam quam natus iste aperiam cupiditate possimus reprehenderit quis, adipisci soluta commodi, perferendis deleniti fugit quidem.
+                    Suscipit vero, mollitia corporis accusamus incidunt aliquam ipsa consequuntur ab laudantium totam aliquid tenetur unde quas sed, quisquam, esse enim facere fugiat? Sit, incidunt optio tenetur illo recusandae consequuntur exercitationem.
+                    Deleniti, voluptate reiciendis saepe dolore voluptates ex perferendis laboriosam quis asperiores repellat maxime minima autem harum doloribus nisi dignissimos! Voluptate praesentium obcaecati iure quibusdam debitis natus est dolor quam corrupti!
+                    Nulla consequuntur natus molestias reiciendis cumque amet! Qui sint deleniti voluptas explicabo delectus dolor dignissimos consequatur, quibusdam nihil tempora quasi libero? Magnam nisi eaque, dolorum necessitatibus voluptate corrupti quae nulla.
+                  </p>
+  
+                  <hr>
+  
+                  <div class="form-check">
+                    <input type="checkbox" name="concordo" id="concordo" value="concordo" class="form-check-input">
+                    <label for="concordo" class="form-check-label">Concordo</label>
+                  </div>
+                  
+                </div>
+              </section>
+  
+              <!-- CAMPO SELECT -->
+  
+              <section class="row mb-2">
+                <label class="col-form-label-lg">Em qual setor gostar de trabalhar?</label>
+                <select name="trabalho" class="form-select">
+                  <option value="">Escolhe uma opção...</option>
+                  <option value="RH">RH</option>
+                  <option value="tecnologia">Tecnologia</option>
+                  <option value="fiananceiro">Fiananceiro</option>
+                </select>
+              </section>
+              
+              <!-- CAMPO TEXTAREA: COMENTÁRIO -->
+              <section class="row mb-2"> 
+                <div class="col-md-12">
+                  <label for="mensagem" class="mb-2">Comente sobre o setor escolhido</label>
+                  <textarea name="mensagem" id="mensagem" placeholder="Descreva brevemente sua opinião" class="form-control"></textarea>
+                </div>
+              </section>
+  
+              <!-- CAMPO DE COR -->
+  
+              <section class="row mb-2">
+                <label for="cor" class="col-md-3">Escolha uma para o site</label>
+                <input type="color" name="cor" id="cor" class="col-md-9 p-0">
+              </section>
+  
+              <div class="col-md-6 mx-auto my-5">
+              <button type="submit" class="btn btn-primary col-12">Enviar Formulário</button>
+              </div>
+        </form>
+    </main>
+
+    <footer class="container-fluid bg-dark text-white py-3">
+      <section class="row d-flex justify-content-between">
+
+        <div class="col-md-6">
+          <p>&copy;2023 Marketing Digital | <a href="#">Privacidade</a> | <a href="#">Políticas</a>
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Icones redes sociais -->
+          <div class="fs-5 d-flex justify-content-evenly social">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+      </section>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
