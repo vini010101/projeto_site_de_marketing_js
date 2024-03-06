@@ -31,6 +31,6 @@ idade.addEventListener("blur",function(){
     }
     else
     alert("infelizmente, voce nao é de maior!")
-    window.location.href = "https://www.youtube.com/watch?v=9a2YNYRsKus&pp=ygUPcmF0byBkYW7Dp2FuZG8g"
+    
 })
 let endereco = document.querySelector()
