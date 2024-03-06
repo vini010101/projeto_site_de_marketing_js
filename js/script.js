@@ -33,4 +33,45 @@ idade.addEventListener("blur",function(){
         alert("infelizmente, voce nao é de maior!");
     }   
 });
+
 let endereco = document.querySelector("#endereco");
+
+function exibirendereco(){
+    console.log(endereco.value)
+    if(endereco.value == ""){
+    endereco.style.border = "2px solid red"
+    }
+    
+    else{
+    endereco.style.border = "2px solid green"
+    }
+}
+endereco.addEventListener("blur",exibirendereco)
+
+let email = document.querySelector("#email")
+
+function exibiremail(){
+    console.log(email.value)
+    if(email.value == ""){
+        email.style.border = "2px solid red"
+    }
+    
+    else{
+        email.style.border = "2px solid green"
+    }
+}
+email.addEventListener("blur",exibiremail)
+
+let password = document.querySelector("#password")
+
+function exibirpassword(){
+    console.log(password.value)
+    if(password.value == ""){
+        password.style.border = "2px solid red"
+    }
+    
+    else{
+        password.style.border = "2px solid green"
+    }
+}
+password.addEventListener("blur",exibirpassword)
