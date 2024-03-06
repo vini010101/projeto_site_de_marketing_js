@@ -18,19 +18,19 @@ function exibirnome(){
 }
 
 nome.addEventListener("blur",exibirnome)
-// o addEventListener cria um evento para algum elemento, no caso estamos utilizando o evento "blur", que é qaundo o foco sai de um campo.
 
-// nome.addEventListener("focus", function(){
-//     nome.value = "Este campo não deve ficar vazio"
-// })
-let idade = document.querySelector("#idade")
+
+let idade = document.querySelector("#idade");
 
 idade.addEventListener("blur",function(){
-    if(idade >= 18){
-        alert("voce possui mais de 18 anos!")
-    }
-    else
-    alert("infelizmente, voce nao é de maior!")
+    // Converter o valor da idade para um numero usando parserINT
+    let idadeValor = parseInt(idade.value);
     
-})
-let endereco = document.querySelector()
+    if(idadeValor <= 18){
+        alert("voce possui mais de 18 anos!")
+    
+    }   else    {
+        alert("infelizmente, voce nao é de maior!");
+    }   
+});
+let endereco = document.querySelector("#endereco");
