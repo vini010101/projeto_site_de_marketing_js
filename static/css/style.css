@@ -1,4 +1,22 @@
 
+.navbar-yellow {
+    background-color: yellow !important;
+}
+
+.footer-yellow {
+    background-color: yellow !important; /* Use !important para garantir que a cor seja aplicada */
+}
+
+.footer-yellow {
+    background-color: yellow; /* Fundo amarelo */
+    color: white; /* Texto branco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave para o texto */
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave para melhorar a legibilidade */
+}
+
 /* PÁGINA HOME */
 .bloco{
     background-color:#ccc;
