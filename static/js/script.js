@@ -26,7 +26,7 @@ idade.addEventListener("blur",function(){
     // Converter o valor da idade para um numero usando parserINT
     let idadeValor = parseInt(idade.value);
     
-    if(idadeValor <= 18){
+    if(idadeValor >=18){
         alert("voce possui mais de 18 anos!")
     
     }   else    {
