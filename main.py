@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, Form  # Certifique-se de importar Request aqui
+from fastapi import FastAPI, Request, Form
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -10,8 +10,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Configura os diretórios de templates
-templates_pages = Jinja2Templates(directory="pages")  # Diretório para o 'trabalhe_conosco.html'
-templates_index = Jinja2Templates(directory="pages")  # Diretório para o 'index.html'
+templates = Jinja2Templates(directory="pages")  # Atualizado para o diretório correto
 
 class FormData(BaseModel):
     nome: str
@@ -25,13 +24,13 @@ class FormData(BaseModel):
 
 # Rota para a página inicial (index.html)
 @app.get("/", response_class=HTMLResponse)
-def read_index(request: Request):  # Certifique-se de que "request" está presente como parâmetro
-    return templates_index.TemplateResponse("index.html", {"request": request})
+def read_index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
 # Rota para o formulário (trabalhe_conosco.html)
-@app.get("/formulario", response_class=HTMLResponse)
-def read_form(request: Request):  # Certifique-se de que "request" está presente como parâmetro
-    return templates_pages.TemplateResponse("trabalhe_conosco.html", {"request": request})
+@app.get("/trabalhe_conosco", response_class=HTMLResponse)
+def read_form(request: Request):
+    return templates.TemplateResponse("trabalhe_conosco.html", {"request": request})
 
 # Submissão do formulário
 @app.post("/submit")
