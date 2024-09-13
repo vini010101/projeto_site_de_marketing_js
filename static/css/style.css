@@ -31,12 +31,14 @@
 .w-500{
     width: 500px;
 }
-.social i:hover{
-    color: #fff;
-    transform:scale(1.5); 
-    transform: rotate(15deg);
+.social a {
+    color: inherit; /* Mantém a cor original */
+    text-decoration: none; /* Remove o sublinhado */
 }
 
+.social a:hover {
+    color: #000; /* Altere para a cor desejada no hover */
+}
 /* EFEITO MENU ATIVO */
 
 .active{
