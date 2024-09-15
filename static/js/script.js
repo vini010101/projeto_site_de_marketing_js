@@ -6,7 +6,6 @@
 // CONST
 // query=pesquisa, seletor
 let nome = document.querySelector("#nome")
-
 function exibirnome(){
     console.log(nome.value)
     if(nome.value == ""){
@@ -61,17 +60,3 @@ function exibiremail(){
     }
 }
 email.addEventListener("blur",exibiremail)
-
-let password = document.querySelector("#password")
-
-function exibirpassword(){
-    console.log(password.value)
-    if(password.value == ""){
-        password.style.border = "2px solid red"
-    }
-    
-    else{
-        password.style.border = "2px solid green"
-    }
-}
-password.addEventListener("blur",exibirpassword)

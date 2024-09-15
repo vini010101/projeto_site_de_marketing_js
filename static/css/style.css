@@ -1,50 +1,55 @@
 
+/* Garantindo que o header e o footer tenham a mesma cor */
 .navbar-yellow {
-    background-color: yellow !important;
+    background-color: #ffff00 !important; /* Cor amarela */
+    color: white !important; /* Texto branco */
+    text-shadow: 2px 2px 4px #00000080; /* Sombra suave no texto */
 }
 
 .footer-yellow {
-    background-color: yellow !important; /* Use !important para garantir que a cor seja aplicada */
+    background-color: yellow !important; /* Mesmo fundo amarelo do header */
+    color: white !important; /* Texto branco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave no texto */
 }
 
-.footer-yellow {
-    background-color: yellow; /* Fundo amarelo */
-    color: white; /* Texto branco */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave para o texto */
-}
-
+/* Sombra no texto para header e footer */
 .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave para melhorar a legibilidade */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhorar a legibilidade */
 }
 
-/* PÁGINA HOME */
-.bloco{
-    background-color:#ccc;
-    height: 50vh;
-}
-.bloco img{
-    min-width: 800px;
-}
-.w-200{
-    width: 200px;
-}
-.w-500{
-    width: 500px;
-}
+/* Estilizando os ícones sociais no footer */
 .social a {
     color: inherit; /* Mantém a cor original */
     text-decoration: none; /* Remove o sublinhado */
 }
 
 .social a:hover {
-    color: #000; /* Altere para a cor desejada no hover */
+    color: #000; /* Cor desejada no hover */
 }
-/* EFEITO MENU ATIVO */
 
-.active{
+/* Outros estilos já existentes */
+.bloco {
+    background-color: #ccc;
+    height: 50vh;
+}
+
+.bloco img {
+    min-width: 800px;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.w-500 {
+    width: 500px;
+}
+
+.active {
     border-bottom: 1px solid #fff;
 }
-.altura{
+
+.altura {
     height: 300px;
     overflow: scroll;
 }

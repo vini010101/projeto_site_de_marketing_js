@@ -23,7 +23,7 @@ class FormData(BaseModel):
     mensagem: str
 
 # Rota para a página inicial (index.html)
-@app.get("/", response_class=HTMLResponse)
+@app.get("/index", response_class=HTMLResponse)
 def read_index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
