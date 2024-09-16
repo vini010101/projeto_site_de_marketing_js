@@ -10,7 +10,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Configura os diretórios de templates
-templates = Jinja2Templates(directory="pages")  # Atualizado para o diretório correto
+templates = Jinja2Templates(directory="pages")
 
 class FormData(BaseModel):
     nome: str
