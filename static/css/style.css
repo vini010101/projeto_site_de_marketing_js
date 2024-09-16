@@ -1,16 +1,21 @@
+.custom-yellow-btn {
+    background-color: yellow;
+    color: black;
+}
+
+.footer-yellow {
+    background-color: yellow !important; /* Fundo amarelo */
+    color: black !important; /* Texto preto */
+    opacity: 1; /* Garante que o fundo não fique transparente */
+}
 
 /* Garantindo que o header e o footer tenham a mesma cor */
 .navbar-yellow {
     background-color: #ffff00 !important; /* Cor amarela */
-    color: white !important; /* Texto branco */
+    color: black !important; /* Texto branco */
     text-shadow: 2px 2px 4px #00000080; /* Sombra suave no texto */
 }
 
-.footer-yellow {
-    background-color: yellow !important; /* Mesmo fundo amarelo do header */
-    color: white !important; /* Texto branco */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave no texto */
-}
 
 /* Sombra no texto para header e footer */
 .text-shadow {
@@ -29,7 +34,7 @@
 
 /* Outros estilos já existentes */
 .bloco {
-    background-color: #ccc;
+    background-color: #cccccc00;
     height: 50vh;
 }
 
