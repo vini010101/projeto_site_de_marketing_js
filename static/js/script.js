@@ -60,3 +60,17 @@ function exibiremail(){
     }
 }
 email.addEventListener("blur",exibiremail)
+
+let fone = document.querySelector("#fone")
+
+function exibirfone(){
+    console.log(fone.value)
+    if (fone.value== ""){
+        fone.style.border = "2px solid red"
+    }
+    
+    else{
+        fone.style.border = "2px solid gree"
+    }
+}
+fone.addEventListener("blur",exibirfone)

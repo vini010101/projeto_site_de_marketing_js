@@ -47,7 +47,7 @@
                         <a class="nav-link" aria-current="page" href="/index">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Formulário</a>
+                        <a class="nav-link active" href="#">Formulário para cadastro</a>
                     </li>
                 </ul>
             </div>
@@ -72,13 +72,21 @@
                     <label for="idade">Idade</label>
                     <input type="number" name="idade" id="idade" class="form-control">
                 </div>
+                
+                
                 <div class="col-md-6">
                     <label for="endereco">Endereço</label>
                     <input type="text" name="endereco" id="endereco" class="form-control">
+
                 </div>
             </section>
 
             <!-- CAMPO DE EMAIL -->
+            <div class="col-md-3">
+                <label for="fone">telefone para contato</label>
+                <input type="number" name="fone" id="fone" class="form-control">
+            </div>
+           
             <section class="row mb-2">
                 <div class="col-md-12">
                     <label for="email" class="mb-2">E-mail</label>
@@ -99,7 +107,12 @@
                 </div>
                 <div class="form-check">
                     <input type="radio" name="escolaridade" id="superior" value="superior" class="form-check-input">
-                    <label for="superior" class="form-check-label">Superior</label>
+                    <label for="superior" class="form-check-label">Superior Cursando</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="escolaridade" id="superiorcompleto" value="superiorcompleto" class="form-check-input">
+                    <label for="superiorcompleto" class="form-check-label">Superior completo</label>
                 </div>
             </section>
 
@@ -160,6 +173,9 @@
                     <option value="RH">RH</option>
                     <option value="tecnologia">Tecnologia</option>
                     <option value="financeiro">Financeiro</option>
+                    <option value="Comercial">Comercial</option>
+                    <option value="Televendas">Televendas</option>
+                    <option value="Marketing">Marketing</option>
                 </select>
             </section>
             
