@@ -1,3 +1,11 @@
+.carousel-inner img {
+    width: 90%; /* Ajusta a largura para preencher o contêiner */
+    height: 1%; /* Mantém a proporção da imagem */
+    max-height: 900px; /* Define a altura máxima da imagem */
+    object-fit: cover; /* Cobre o espaço do contêiner, cortando partes da imagem, se necessário */
+}
+
+
 /* Estilo para o logo */
 .logo-img {
     height: 40px;
