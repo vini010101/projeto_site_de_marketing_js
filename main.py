@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, Form
+from fastapi import FastAPI, Request, Form, UploadFile, File
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -32,9 +32,8 @@ def read_index(request: Request):
 def read_form(request: Request):
     return templates.TemplateResponse("trabalhe_conosco.html", {"request": request})
 
-# Submissão do formulário
 @app.post("/submit")
-def submit_form(
+async def submit_form(
     nome: str = Form(...),
     idade: int = Form(...),
     endereco: str = Form(...),
@@ -42,7 +41,10 @@ def submit_form(
     escolaridade: str = Form(...),
     concordo: bool = Form(...),
     trabalho: str = Form(...),
-    mensagem: str = Form(...)
+    mensagem: str = Form(...),
+    curriculo: UploadFile = File(...)
+
+    
 ):
     return {
         "nome": nome,

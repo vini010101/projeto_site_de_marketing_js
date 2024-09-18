@@ -57,18 +57,23 @@
     <main class="container bg-secondary-subtle">
         <h1 class="text-center my-5">Formulário de Cadastro</h1>
         
-        <form action="http://127.0.0.1:8000/submit" method="post">
+        <form action="http://127.0.0.1:8000/submit" method="post" enctype="multipart/form-data">
             <!-- CAMPO DE TEXTO: NOME -->
             <section class="row mb-2">
-                <div class="col-md-12">
+                <div class="col-md-9">
                     <label for="nome" class="mb-2">Nome</label>
                     <input type="text" name="nome" id="nome" class="form-control">
                 </div>
+                <section class="row mb-2">
+                    <div class="col-md-3">
+                        <label for="nome" class="mb-2">CPF</label>
+                        <input type="number" name="cpf" id="cpf" class="form-control">
+                    </div>
             </section>
 
             <!-- CAMPO NÚMERO E TEXTO: IDADE E ENDEREÇO -->
             <section class="row mb-2">
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <label for="idade">Idade</label>
                     <input type="number" name="idade" id="idade" class="form-control">
                 </div>
@@ -83,12 +88,16 @@
 
             <!-- CAMPO DE EMAIL -->
             <div class="col-md-3">
-                <label for="fone">telefone para contato</label>
+                <label for="fone">primeiro telefone para contato</label>
                 <input type="number" name="fone" id="fone" class="form-control">
             </div>
            
+            <div class="col-md-3">
+                <label for="fone">segundo  telefone para contato</label>
+                <input type="number" name="fone" id="fone2" class="form-control">
+            </div>
             <section class="row mb-2">
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <label for="email" class="mb-2">E-mail</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="email@email.com">
                 </div>
@@ -110,12 +119,24 @@
                     <label for="superior" class="form-check-label">Superior Cursando</label>
                 </div>
 
-                <div class="form-check"></div>
+                <div class="form-check">
                     <input type="radio" name="escolaridade" id="superiorcompleto" value="superiorcompleto" class="form-check-input">
                     <label for="superiorcompleto" class="form-check-label">Superiorcompleto</label>
                 </div>
             </section>
-
+            
+            <!--adicionei um campo para recebr os curriculos digitalmente-->
+            <section class="row mb-2">
+                <div class="col-md-5">
+                    <label for="curriculo" class="mb-2">Envie seu currículo (PDF ou DOCX)</label>
+                    <div class="custom-file">
+                        <input type="file" name="curriculo" id="curriculo" class="custom-file-input" accept=".pdf,.docx">
+                        <label class="custom-file-label" id="file-label" for="curriculo">Escolha o arquivo</label>
+                    </div>
+                    <!-- Div para mostrar a mensagem de erro, se houver -->
+                    <div id="file-error" class="text-danger mt-2"></div>
+                </div>
+            </section>
             <!-- INFO DE CONTRATO -->
             <section class="p-5 mt-3" id="contrato">
                 <div class="container-fluid">
@@ -186,14 +207,13 @@
                     <textarea name="mensagem" id="mensagem" placeholder="Descreva aqui" class="form-control"></textarea>
                 </div>
             </section>
-            <div class="col-md-6 mx-auto my-5">
+            <div class="col-md-6 mx-auto my-2">
                 <button type="submit" class="btn btn-warning col-12">Enviar Formulário</button>
             </div>
         </form>
     </main>
     <footer class="col-md-6 mx-auto my-5 container footer-yellow">
         <!-- Conteúdo do rodapé -->
-        <p class="text-center py-3">© 2024 Obratec. Todos os direitos reservados.</p>
     </footer>
     <script src="static/js/script.js"></script>
 </body>

@@ -1,10 +1,4 @@
-// alert("Hello World")
-// console.log("Só quem é dev vai descobir")
-// area de registro
-// VAR
-// LET
-// CONST
-// query=pesquisa, seletor
+
 let nome = document.querySelector("#nome")
 function exibirnome(){
     console.log(nome.value)
@@ -74,3 +68,39 @@ function exibirfone(){
     }
 }
 fone.addEventListener("blur",exibirfone)
+
+// Referências aos elementos do DOM
+const inputFile = document.getElementById('curriculo');
+const fileLabel = document.getElementById('file-label');
+const fileError = document.getElementById('file-error');
+
+// Função para formatar o nome do arquivo e validar o tipo e tamanho
+inputFile.addEventListener('change', function() {
+    const file = this.files[0]; // Obtém o arquivo selecionado
+    fileError.textContent = ''; // Limpa erros anteriores
+
+    if (file) {
+        const allowedExtensions = ['pdf', 'docx'];
+        const fileSizeLimit = 2 * 1024 * 1024; // Limite de 2MB para o arquivo
+        const fileExtension = file.name.split('.').pop().toLowerCase();
+
+        // Validação de extensão de arquivo
+        if (!allowedExtensions.includes(fileExtension)) {
+            fileError.textContent = 'Por favor, envie apenas arquivos PDF ou DOCX.';
+            this.value = ''; // Reseta o input
+            fileLabel.textContent = 'Escolha o arquivo';
+            return;
+        }
+
+        // Validação de tamanho de arquivo
+        if (file.size > fileSizeLimit) {
+            fileError.textContent = 'O arquivo deve ter no máximo 2MB.';
+            this.value = ''; // Reseta o input
+            fileLabel.textContent = 'Escolha o arquivo';
+            return;
+        }
+
+        // Se o arquivo for válido, atualiza o texto do label
+        fileLabel.textContent = file.name;
+    }
+});
