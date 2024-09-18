@@ -23,12 +23,12 @@ class FormData(BaseModel):
     mensagem: str
 
 # Rota para a página inicial (index.html)
-@app.get("/index", response_class=HTMLResponse)
+@app.get("/index.html", response_class=HTMLResponse)
 def read_index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 # Rota para o formulário (trabalhe_conosco.html)
-@app.get("/trabalhe_conosco", response_class=HTMLResponse)
+@app.get("/trabalhe_conosco.html", response_class=HTMLResponse)
 def read_form(request: Request):
     return templates.TemplateResponse("trabalhe_conosco.html", {"request": request})
 
