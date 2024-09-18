@@ -9,8 +9,17 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <title>Trabalhe Conosco</title>
     <style>
+        
+        .text-dark {
+            color: #000000 !important; /* Cor preta bem escura */
+        }
+
+        .font-weight-bold {
+            font-weight: bold !important; /* Aumenta o peso da fonte para deixar o texto mais escuro */
+        }
+        
         .custom-navbar {
-            background-color: #ffff00; /* Cor de fundo */
+            background-color: #eed601; /* Cor de fundo */
             padding-top: 10px; /* Ajuste conforme necessário */
             padding-bottom: 10px; /* Ajuste conforme necessário */
         }
@@ -21,22 +30,30 @@
             height: 40px; /* Ajuste a altura conforme necessário */
             padding: 5px;
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.5); /* Fundo branco semitransparente para o logo */
+            background-color: rgba(255, 255, 255, 0.575); /* Fundo branco semitransparente para o logo */
+        }
+        /* Removendo o sublinhado dos links na barra de navegação */
+        .nav-link {
+            text-decoration: none !important; /* Remove o sublinhado */
+        }
+        .nav-link:hover {
+            text-decoration: underline; /* Se quiser sublinhado no hover, pode adicionar isso */
         }
         .social a {
             color: inherit; /* Mantém a cor original */
             text-decoration: none; /* Remove o sublinhado */
         }
         .social a:hover {
-            color: #00000080; /* Cor desejada no hover */
+            color: #000000; /* Cor desejada no hover */
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm custom-navbar sticky-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm sticky-top navbar-yellow text-shadow">
         <div class="container-fluid">
             <a class="navbar-brand" href="">
-                <img src="static/assets/imagens/blocos/logo.jpg" alt="logo obratec">
+                <img src="static/assets/imagens/blocos/logo.jpg" alt="Obratec Atacarejo da Construção" style="height: 40px; padding: 5px; border-radius: 5px; background-color: rgba(255, 255, 255, 0.5);">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,15 +61,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                        <a class="nav-link text-dark font-weight-bold" aria-current="page" href="index.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Formulário para cadastro</a>
+                        <a class="nav-link text-dark font-weight-bold" href="trabalhe_conosco.html">Formulário para cadastro</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+      </nav>
     
     <main class="container bg-secondary-subtle">
         <h1 class="text-center my-5">Formulário de Cadastro</h1>
@@ -129,14 +146,21 @@
             <section class="row mb-2">
                 <div class="col-md-5">
                     <label for="curriculo" class="mb-2">Envie seu currículo (PDF ou DOCX)</label>
-                    <div class="custom-file">
-                        <input type="file" name="curriculo" id="curriculo" class="custom-file-input" accept=".pdf,.docx">
-                        <label class="custom-file-label" id="file-label" for="curriculo">Escolha o arquivo</label>
-                    </div>
+                </div>
+                    <!-- Div para o input do arquivo -->
+<div class="custom-file">
+    <!-- Label estilizada -->
+    <label class="custom-file-label" id="file-label" for="curriculo">
+        Escolha o arquivo
+        <!-- Input escondido, o clique é feito na label -->
+        <input type="file" name="curriculo" id="curriculo" class="custom-file-input" accept=".pdf,.docx" hidden>
+    </label>
+</div>
                     <!-- Div para mostrar a mensagem de erro, se houver -->
                     <div id="file-error" class="text-danger mt-2"></div>
                 </div>
             </section>
+            
             <!-- INFO DE CONTRATO -->
             <section class="p-5 mt-3" id="contrato">
                 <div class="container-fluid">

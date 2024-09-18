@@ -1,55 +1,55 @@
-.custom-file-input {
-    cursor: pointer;
-}
-
-.custom-file-input:hover {
-    background-color: #f8e473; /* Tom mais claro de amarelo ao passar o mouse */
-}
-
+/* Estilo para o label do input de arquivo */
 .custom-file-label {
-    background-color: #ffd700; /* Amarelo principal */
-    border-color: #ffd700;
-    color: #000; /* Preto para contraste */
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.custom-file-input:focus + .custom-file-label {
-    box-shadow: 0 0 5px #ffd700; /* Sombra amarela ao focar */
+    background-color: #ffd000ea; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    text-align: center;
+    display: inline-block; /* Exibir como botão */
 }
 
 .custom-file-label:hover {
-    background-color: #ffc107; /* Amarelo mais intenso ao passar o mouse */
-    border-color: #ffc107;
+    background-color: #f1c605ee; /* Cor de fundo ao passar o mouse */
 }
 
+.custom-file-label:active {
+    background-color: #f5df18; /* Cor de fundo ao clicar */
+}
 
+/* Escondendo o input de arquivo real */
+#curriculo {
+    display: none;
+}
 
+/* Estilo para botões amarelos */
 .custom-yellow-btn {
     background-color: yellow;
     color: black;
 }
 
+/* Estilo para o footer amarelo */
 .footer-yellow {
     background-color: yellow !important; /* Fundo amarelo */
     color: black !important; /* Texto preto */
     opacity: 1; /* Garante que o fundo não fique transparente */
 }
 
-/* Garantindo que o header e o footer tenham a mesma cor */
+/* Estilo para a barra de navegação amarela */
 .navbar-yellow {
-    background-color: #ffff00 !important; /* Cor amarela */
-    color: black !important; /* Texto branco */
+    background-color: #eed601 !important; /* Cor de fundo amarela */
+    color: rgba(0, 0, 0, 0.993) !important; /* Texto preto */
     text-shadow: 2px 2px 4px #00000080; /* Sombra suave no texto */
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-
-/* Sombra no texto para header e footer */
+/* Sombra para melhorar a legibilidade em texto */
 .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhorar a legibilidade */
+    text-shadow: 2px 2px 4px rgba(201, 180, 180, 0.747); /* Sombra no texto */
 }
 
-/* Estilizando os ícones sociais no footer */
+/* Estilo para os ícones sociais no footer */
 .social a {
     color: inherit; /* Mantém a cor original */
     text-decoration: none; /* Remove o sublinhado */
@@ -59,29 +59,29 @@
     color: #000; /* Cor desejada no hover */
 }
 
-/* Outros estilos já existentes */
+/* Estilos adicionais */
 .bloco {
-    background-color: #cccccc00;
-    height: 50vh;
+    background-color: #cccccc00; /* Fundo transparente */
+    height: 50vh; /* Altura do bloco */
 }
 
 .bloco img {
-    min-width: 800px;
+    min-width: 800px; /* Largura mínima da imagem */
 }
 
 .w-200 {
-    width: 200px;
+    width: 200px; /* Largura de 200px */
 }
 
 .w-500 {
-    width: 500px;
+    width: 500px; /* Largura de 500px */
 }
 
 .active {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff; /* Borda inferior ao estado ativo */
 }
 
 .altura {
-    height: 300px;
-    overflow: scroll;
+    height: 300px; /* Altura definida */
+    overflow: scroll; /* Rolagem quando necessário */
 }
