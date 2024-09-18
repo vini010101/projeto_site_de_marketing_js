@@ -6,13 +6,12 @@
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Estilo para o link "Início" */
-.nav-link-home {
-    color: #000000; /* Cor padrão para "Início" */
+.text-dark {
+    color: #000000 !important; /* Cor preta bem escura */
 }
 
-.nav-link-home.active {
-    color: #333; /* Cor mais escura quando a página estiver ativa */
+.font-weight-bold {
+    font-weight: bold !important; /* Aumenta o peso da fonte para deixar o texto mais escuro */
 }
 
 /* Estilo para o link "Formulário para cadastro" */
