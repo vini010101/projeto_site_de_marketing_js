@@ -1,3 +1,29 @@
+/* Estilo para o logo */
+.logo-img {
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo para o link "Início" */
+.nav-link-home {
+    color: #000000; /* Cor padrão para "Início" */
+}
+
+.nav-link-home.active {
+    color: #333; /* Cor mais escura quando a página estiver ativa */
+}
+
+/* Estilo para o link "Formulário para cadastro" */
+.nav-link-form {
+    color: #000000; /* Cor padrão para "Formulário para cadastro" */
+}
+
+.nav-link-form.active {
+    color: #333; /* Cor mais escura quando a página estiver ativa */
+}
+
 /* Estilo para o label do input de arquivo */
 .custom-file-label {
     background-color: #ffd000ea; /* Cor de fundo */
