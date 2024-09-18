@@ -101,18 +101,24 @@
                     <input type="text" name="endereco" id="endereco" class="form-control">
 
                 </div>
+
             </section>
 
-            <!-- CAMPO DE EMAIL -->
-            <div class="col-md-3">
-                <label for="fone">primeiro telefone para contato</label>
-                <input type="number" name="fone" id="fone" class="form-control">
-            </div>
-           
-            <div class="col-md-3">
-                <label for="fone">segundo  telefone para contato</label>
-                <input type="number" name="fone" id="fone2" class="form-control">
-            </div>
+            <!-- CAMPO DE DADOS PARA CONTATO -->
+    <div class="col-md-3">
+         <div class="mb-3">
+         <label for="fone" class="form-label">Primeiro telefone para contato</label>
+            <input type="tel" name="fone" id="fone" class="form-control" placeholder="Digite o primeiro telefone" required>
+    </div>
+    
+    <div class="mb-3">
+        <label for="fone2" class="form-label">(Opcional) Segundo telefone para contato</label>
+        <input type="tel" name="fone2" id="fone2" class="form-control" placeholder="Digite o segundo telefone">
+    </div>
+</div>
+            
+            
+            <!-- CAMPO E-MAil PARA CONTATO -->
             <section class="row mb-2">
                 <div class="col-md-10">
                     <label for="email" class="mb-2">E-mail</label>
@@ -221,6 +227,7 @@
                     <option value="Comercial">Comercial</option>
                     <option value="Televendas">Televendas</option>
                     <option value="Marketing">Marketing</option>
+                    <option value="Marketing">Logistica</option>
                 </select>
             </section>
             

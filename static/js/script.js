@@ -55,6 +55,7 @@ function exibiremail(){
 }
 email.addEventListener("blur",exibiremail)
 
+
 let fone = document.querySelector("#fone")
 
 function exibirfone(){
@@ -68,6 +69,8 @@ function exibirfone(){
     }
 }
 fone.addEventListener("blur",exibirfone)
+
+
 
 // Referências aos elementos do DOM
 const inputFile = document.getElementById('curriculo');
