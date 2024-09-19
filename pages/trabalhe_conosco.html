@@ -81,12 +81,6 @@
                     <label for="nome" class="mb-2">Nome</label>
                     <input type="text" name="nome" id="nome" class="form-control">
                 </div>
-                <section class="row mb-2">
-                    <div class="col-md-3">
-                        <label for="nome" class="mb-2">CPF</label>
-                        <input type="number" name="cpf" id="cpf" class="form-control">
-                    </div>
-            </section>
 
             <!-- CAMPO NÚMERO E TEXTO: IDADE E ENDEREÇO -->
             <section class="row mb-2">
@@ -95,6 +89,20 @@
                     <input type="number" name="idade" id="idade" class="form-control">
                 </div>
                 
+                <section class="row mb-2 ps-3">
+                    <label class="col-form-label-lg">Sexo</label>
+                    <div class="form-check">
+                        <input type="radio" name="sexo" id="masculino" value="masculino" class="form-check-input">
+                        <label for="masculino" class="form-check-label">MACULINO</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="sexo" id="feminino" value="feminino" class="form-check-input">
+                        <label for="feminino" class="form-check-label">FEMININO</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="sexo" id="naodizer" value="naodizer" class="form-check-input">
+                        <label for="nao dizer" class="form-check-label">PREFIRO NÃO DIZER</label>
+                    </div>
                 
                 <div class="col-md-6">
                     <label for="endereco">Endereço</label>
@@ -126,7 +134,7 @@
                 </div>
             </section>
 
-            <!-- CAMPO RADIO -->
+            <!-- CAMPO PARA O CANDITADO ESPECIFICAR O NIVEL DE SUA ESCOLARIDADE -->
             <section class="row mb-2 ps-3">
                 <label class="col-form-label-lg">Qual o seu nível de escolaridade?</label>
                 <div class="form-check">
@@ -147,7 +155,82 @@
                     <label for="superiorcompleto" class="form-check-label">Superiorcompleto</label>
                 </div>
             </section>
-            
+            <!-- CAMPO PARA O CANDIDATO ESPECIFICA SE POSSUI OU NÃO EXPERINCIA NA FUNÇÃO-->
+            <section class="row mb-2 ps-3"></section>
+                <label class="col-form-label-lg">Voce Possui experiência na area que voce esta se candidatando</label>
+                <div class="form-check">
+                    <input type="radio" name="experincia" id="experincia_sim" value="experincia_sim" class="form-check-input">
+                    <label for="experincia" class="form-check-label">SIM</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="experincia" id="experincia_nao" value="experincia_nao" class="form-check-input">
+                    <label for="experiência" class="form-check-label">NÃO</label>
+                </div>
+
+                <!--CAMPO ONDE O USUARIA IRA ESPECIFICAR ONDE ENCONTROU A VAGA, NO FUTURO PODE SER UTUILIZADO PARA DIRECIONAR A DIVIGAÇÃO DAS VAGAS-->
+                <section class="row mb-2 ps-3"></section>
+                <label class="col-form-label-lg">Onde você conheceu nossas vagas?</label>
+                <div class="form-check">
+                    <input type="radio" name="site_emprego" id="site_emprego" value="site_emprego" class="form-check-input">
+                    <label for="site_emprego" class="form-check-label">Sites de emprego (ex: Indeed, Glassdoor, LinkedIn)</label>
+                </div>
+                
+                <div class="form-check">
+                    <input type="radio" name="indicacao" id="indicacao" value="indicacao" class="form-check-input">
+                    <label for="indicacao" class="form-check-label">indicação</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="rede_sociais" id="rede_sociais" value="rede_sociais" class="form-check-input">
+                    <label for="rede_sociais" class="form-check-label">Redes sociais (Facebook, Instagram, ETC)</label>
+                </div>
+
+                 
+
+            <!-- CAMPO PARA O CANDIDATO ESPECIFICAR EM QUAL CARGO QUER TRABALHAR -->
+            <section class="row mb-2">
+                <label class="col-form-label-lg">Em qual cargo voce  gostaria de trabalhar?</label>
+                <select name="trabalho" class="form-select">
+                    <option value="">Escolha uma opção...</option>
+                    <option value="analista">Analista</option>
+                    <option value="assistente">Assistente</option>
+                    <option value="coodernador">Coordenador(a)</option>
+                    <option value="gerente">Gerente</option>
+                    <option value="Supervisor">Supervisor(a)</option>
+                    <option value="tecnico">Tecnico</option>
+                    <option value="auxiliar">Auxiliar</option>
+                </select>
+            </section>
+
+
+            <!-- CAMPO PARA O CANDIDATO ESPECIFICAR EM QUAL SETOR QUER TRABALHAR -->
+            <section class="row mb-2">
+                <label class="col-form-label-lg">Em qual setor voce gostaria de trabalhar?</label>
+                <select name="trabalho" class="form-select">
+                    <option value="">Escolha uma opção...</option>
+                    <option value="RH">RH</option>
+                    <option value="tecnologia">Ti  e Sistemas</option>
+                    <option value="financeiro">Financeiro e contabilidade</option>
+                    <option value="Comercial">Comercial e vendas</option>
+                    <option value="Televendas">Televendas</option>
+                    <option value="Marketing">Marketing e Comunicação</option>
+                    <option value="logistica">Logistica e Distribuição</option>
+                    <option value="compras">Compras e Suprimentos</option>
+                    <option value="gerencia">Gerencia e Planejamento</option>
+                    <option value="manutencao">Manutenção e Infrestutura</option>
+                </select>
+            </section>
+
+
+            <!-- CAMPO COMENTÁRIO -->
+            <section class="row mb-2"> 
+                <div class="col-md-12">
+                    <label for="mensagem" class="mb-2">Por que você quer trabalhar nesse setor?</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Descreva aqui" class="form-control"></textarea>
+                </div>
+            </section>
+
+
             <!--adicionei um campo para recebr os curriculos digitalmente-->
             <section class="row mb-2">
                 <div class="col-md-5">
@@ -216,28 +299,7 @@
                 </div>
             </section>
 
-            <!-- CAMPO SELECT -->
-            <section class="row mb-2">
-                <label class="col-form-label-lg">Em qual setor gostaria de trabalhar?</label>
-                <select name="trabalho" class="form-select">
-                    <option value="">Escolha uma opção...</option>
-                    <option value="RH">RH</option>
-                    <option value="tecnologia">Tecnologia</option>
-                    <option value="financeiro">Financeiro</option>
-                    <option value="Comercial">Comercial</option>
-                    <option value="Televendas">Televendas</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Marketing">Logistica</option>
-                </select>
-            </section>
             
-            <!-- CAMPO TEXTAREA: COMENTÁRIO -->
-            <section class="row mb-2"> 
-                <div class="col-md-12">
-                    <label for="mensagem" class="mb-2">Por que você quer trabalhar nesse setor?</label>
-                    <textarea name="mensagem" id="mensagem" placeholder="Descreva aqui" class="form-control"></textarea>
-                </div>
-            </section>
             <div class="col-md-6 mx-auto my-2">
                 <button type="submit" class="btn btn-warning col-12">Enviar Formulário</button>
             </div>
